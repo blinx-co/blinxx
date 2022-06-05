@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+        <meta charset="utf-8">
+        <title>blinx about me</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="Cosmics About-Me">
+        <meta property="og:url" content="index.html"/>
+         <meta property="og:image" content="https://cdn.discordapp.com/attachments/972926982188847165/983064802333184000/Cosmic.png">
+        <meta name="theme-color" content="#0ced13">
+        <link rel="stylesheet" href="main.css">
+    </head>
+    <body>
+        <main>
+            <script>
+                function audioPlay() {
+                    var audio = document.getElementById("audio");
+                    audio.volume = 0.1;
+                    audio.play()
+                }
+                function videoPlay() {
+                    var video = document.getElementById("video");
+                    video.play()
+                }
+            </script>
+            <input type="checkbox" autocomplete="off" id="overlay-toggle">
+            <div class="overlay fullscreen">
+                <label for="overlay-toggle" onclick="audioPlay();videoPlay()">
+                    <span class="no-hover" style="font-family: mono; font-size: 0.6em;">tap to enter</span>
+                    <span class="hover" style="font-family: mono; font-size: 0.6em;">click to enter</span>
+                </label>
+            </div>
+            <audio loop preload="auto" id="audio">
+                <source src="SplurgenShitter.mp3" type="audio/mp3">
+            </audio>
+            <video muted loop playsinline preload="auto" class="fullscreen bg-video" id="video">
+                <source src="lightning.mp4" type="video/mp4">
+            </video>
+            <section class="fullscreen text-content">
+                <h1 style="font-family: derk; text-shadow: 0 0 0.40em #bababa;">blinx</h1>
+               <div class='test-fix'>
+              </div>
+              <div class='test-fix'>
+                <a href="https://pastebin.com/raw/t2u0xBMK" style="text-decoration:none; font-family: mono; font-size: 1.1em; text-shadow: 0 0 0.40em #bababa;">discord</a>
+              </div>
+            </section>
+            <div style="position: relative">
+                <p style="position: fixed; bottom: 0; width:100%; text-align: center; font-family: mono; color: white; text-shadow: 0 0 0.40em #bababa;">© Cosmic - 2021 | song: pogo - splurgenshitter | credits to cosmic 🖤</p>
+            </div>
+        </main>
+    </body>
